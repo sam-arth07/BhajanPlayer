@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+	font-family: sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+/* Music Player Container */
+.music-player {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 600px;
+	max-width: 90%;
+}
+
+/* Song Information */
+.song-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.song-title,
+.artist-name {
+	font-size: 1.2rem;
+}
+
+/* Controls */
+.controls {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.controls button {
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.controls button.active {
+	color: #007bff;
+}
+
+/* Progress Bar */
+/* .progress {
+    width: 100%;
+    height: 7px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+} */
+
+progress {
+	height: 10px;
+	background-color: #007bff;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+progress::-webkit-progress-bar {
+	background-color: #ddd;
+}
+progress::-webkit-progress-value {
+	background-color: #007bff;
+}
+/* Volume Control */
+.volume-control {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.volume-slider {
+	-webkit-appearance: none;
+	width: 100px;
+	height: 5px;
+	background-color: #ddd;
+	outline: none;
+	border-radius: 5px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background-color: #007bff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* Playlist */
+.playlist {
+	list-style: none;
+	padding: 0;
+}
+
+.playlist li {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+
+.playlist li.active {
+	background-color: #f0f0f0;
+}
+
+/* Add Song Button */
+.add-song-btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.delete-icon {
+	color: red;
+}
+
+.timeline {
+	display: flex;
+	justify-content: space-between;
+}
